@@ -23,7 +23,7 @@ let package = Package(
             dependencies: [
                 .product(name: "swiftfsm", package: "swiftfsm")
             ]),
-        .target(name: "cpu_notifier", dependencies: [.target(name: "CPUNotifier")]),
+        .executableTarget(name: "cpu_notifier", dependencies: [.target(name: "CPUNotifier")]),
         .testTarget(
             name: "CPUNotifierTests",
             dependencies: [
